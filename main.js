@@ -56,6 +56,9 @@ function findThing() {
 findThing();
 
 function combineJoke() {
+  document.getElementById(
+    "test"
+  ).innerHTML = `Why did ${findPerson()}, ${findAction()} ${findThing()}?`;
   console.log(`Why did ${findPerson()}, ${findAction()} ${findThing()}?`);
 }
 combineJoke();
