@@ -37,4 +37,26 @@ let thingArray = [
   "toast",
 ];
 
+function findPerson() {
+  let personIndex = Math.floor(Math.random() * 10);
+  return personArray[personIndex];
+}
+findPerson();
+
+function findAction() {
+  let actionIndex = Math.floor(Math.random() * 10);
+  return actionArray[actionIndex];
+}
+findAction();
+
+function findThing() {
+  let thingIndex = Math.floor(Math.random() * 10);
+  return thingArray[thingIndex];
+}
+findThing();
+
+function combineJoke() {
+  console.log(`Why did ${findPerson()}, ${findAction()} ${findThing()}?`);
+}
+combineJoke();
 // output "Why did the X, Y the Z?"
